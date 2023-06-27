@@ -36,7 +36,7 @@ Rviz for visualization:
 roslaunch gins gins_rviz.launch
 ```
 
-
+<img src="https://github.com/slender1031/kf-gins-ros/blob/main/rviz.png" />
 
 
 Thanks for the team of Prof. Xiaoji Niu of the Integrated and Intelligent Navigation (i2Nav) group from GNSS Research Center of Wuhan University for providing the open-source KF-GINS software.
