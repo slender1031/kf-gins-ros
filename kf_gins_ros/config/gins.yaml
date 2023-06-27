@@ -1,0 +1,39 @@
+%YAML:1.0
+
+# KF-GINS configuration file
+imu_topic: "/imu/data"
+gnss_topic: "/gnss"
+output_path: "/home/slender/torch_ws/GINS_ws/src/traj/gins_result.txt"
+
+# IMU零偏和比例因子, IMU的三个轴(前、右、下)
+gyrbias: [ 0, 0, 0 ]    # [deg/h]
+accbias: [ 0, 0, 0 ]    # [mGal]
+gyrscale: [ 0, 0, 0 ]   # [ppm]
+accscale: [ 0, 0, 0 ]   # [ppm]
+
+# 初始状态
+initpos: [  30.4447873701, 114.4718632047, 20.899  ]            # 位置, 大地坐标系BLH [deg, deg, m]
+initvel: [ 0.0, 0.0, 0.0 ]                                                          # 速度, 导航坐标系NED速度 [m/s, m/s, m/s]
+initatt: [0.85521958,   -2.03747499 , 185.69847184]                                     # 姿态欧拉角 [deg]
+
+
+# 初始状态标准差
+initposstd: [ 0.005, 0.004, 0.008 ]           # 位置, 导航坐标系下 北向, 东向和垂向 [m, m, m]
+initvelstd: [ 0.003, 0.004, 0.004 ]     # 速度, 导航坐标系下北向、东向和垂向速度 [m/s, m/s, m/s]
+initattstd: [ 0.003, 0.003, 0.023 ]             # 姿态, 横滚、俯仰、航向角标准差 [deg, deg, deg]
+
+
+# IMU噪声建模参数, IMU的三个轴
+# 零偏随机游走
+arw: [0.003, 0.003, 0.003]          # [deg/sqrt(hr)]
+vrw: [0.03, 0.03, 0.03]          # [m/s/sqrt(hr)]
+# bias标准差
+gbstd: [0.027, 0.027, 0.027]        # [deg/hr]
+abstd: [15.0, 15.0, 15.0]     # [mGal]
+# 比例因子标准差
+gsstd: [300.0, 300.0, 300.0]  # [ppm]
+asstd: [300.0, 300.0, 300.0]  # [ppm]
+corrtime: 4.0                    # [hr]
+
+# 天线杆臂, IMU坐标系前右下方向
+antlever: [ 0.136, -0.301, -0.184 ]   # [m]

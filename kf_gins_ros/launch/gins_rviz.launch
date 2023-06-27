@@ -1,0 +1,4 @@
+<launch>
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d /home/slender/torch_ws/GINS_ws/src/kf_gins_ros/config/gins_rviz_config.rviz">
+    </node>
+</launch>
