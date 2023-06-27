@@ -18,9 +18,9 @@ you need to check File **PATH** and ROS **Topics**.
 
 Execute the following commands to compile the project:
 ```shell
-cd && mkdir /gins_ws/src
+cd  ~/gins_ws/src
 git clone https://github.com/slender1031/kf-gins-ros.git
-cd ..
+cd ../
 catkin_make
 ```
 
