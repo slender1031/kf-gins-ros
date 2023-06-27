@@ -12,7 +12,8 @@ Configuration：
 
 Attention:you need to check File **PATH** and ROS **Topics**.
 
-Command:
+Execute the following commands:
+
 
 
 
