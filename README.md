@@ -1,17 +1,20 @@
 # kf-gins-ros
 kf-gins-ros
 
-A ros version of kf-gins is proposed (based on C++), you need to check File PATH and ROS Topics.
-
 The main works are as follows:
 1. Convert the datasets to rosbag
-2. 
-
+2. A ros version of kf-gins (based on C++)
 
 Configuration：
 * Ubuntu18.04
 * ros-melodic
 * Eigen3
+
+Attention:you need to check File **PATH** and ROS **Topics**.
+
+Command:
+
+
 
 
 Thanks for the team of Prof. Xiaoji Niu of the Integrated and Intelligent Navigation (i2Nav) group from GNSS Research Center of Wuhan University for providing the open-source KF-GINS software.
