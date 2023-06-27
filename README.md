@@ -5,17 +5,32 @@ The main works are as follows:
 1. Convert the datasets to rosbag
 2. A ros version of kf-gins (based on C++)
 
-Configuration：
+### Configuration
 * Ubuntu18.04
 * ros-melodic
 * Eigen3
 
-Attention:you need to check File **PATH** and ROS **Topics**.
 
-Execute the following commands:
+### Program Compilation and Execution
 
+**Attention:**
+you need to check File **PATH** and ROS **Topics**.
 
+Execute the following commands to compile the project:
+```shell
+cd && mkdir /gins_ws/src
+git clone https://github.com/slender1031/kf-gins-ros.git
+cd ..
+catkin_make
+```
 
+Run commands:
+```shell
+source devel/setup.bash
+rosrun data_convert data_convert_node
+rosrun gins gins_node [path to YAML]
+roslaunch gins gins_rviz.launch
+```
 
 
 Thanks for the team of Prof. Xiaoji Niu of the Integrated and Intelligent Navigation (i2Nav) group from GNSS Research Center of Wuhan University for providing the open-source KF-GINS software.
