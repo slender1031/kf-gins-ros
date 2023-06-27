@@ -29,11 +29,18 @@ Run commands:
 source devel/setup.bash
 rosrun data_convert data_convert_node
 rosrun gins gins_node [path to YAML]
+```
+
+Rviz for visualization:
+```shell
 roslaunch gins gins_rviz.launch
 ```
 
 
+
+
 Thanks for the team of Prof. Xiaoji Niu of the Integrated and Intelligent Navigation (i2Nav) group from GNSS Research Center of Wuhan University for providing the open-source KF-GINS software.
+
 感谢武汉大学卫星导航定位技术研究中心多源智能导航实验室(i2Nav)牛小骥教授团队开源的KF-GINS软件平台
 (https://github.com/i2Nav-WHU/KF-GINS)
 
